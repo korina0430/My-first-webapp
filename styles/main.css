@@ -1,0 +1,193 @@
+
+body {
+	margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+}
+
+/* FINISH ME (Task 2.2+): add the styling for the logo and the create button */
+html{
+        background-color:#a9a9a9;
+}
+header {
+    display: block;
+    width: 100%;
+    text-align:center;
+    position:fixed;
+    background-color: #a9a9a9;
+}
+.create {
+        display: block;
+    width: 100%;
+    text-align:center;
+    position:fixed;
+        background-color:#60b9bc;
+}
+form {
+        display:block;
+        margin:auto;
+        width:80%
+}
+.title-input{
+        display:block;
+        width:100%;
+}
+.story-input{
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+        height:100px;
+       width:100%;
+}
+label{
+        display:block;
+        margin-bottom:10px;
+}
+.happiness-level-input{
+        display:block;
+}
+.cancel{
+        display:block;
+        float:left;
+       border-style:ridge;
+      border:2px solid #cecece;
+      
+        background-color:#60b9bc;
+        text-decoration:none;
+       
+}
+select {
+        margin-bottom:5px;
+}
+.submit-input {
+        display:block;
+        float:right;
+       border-style:ridge;
+        background-color:#60b9bc;
+        text-decoration:none;
+}
+.submit-input:hover{
+        background-color:#cecece;
+}
+body {
+        font-family:Verdana;
+       
+}
+.mainbody,.smiles {
+        padding-top: 200px;
+        background-color:#a9a9a9;
+}
+/* Makes "Share a Smile" link clickable across entire browser */
+.testing{
+     display:block;
+        width: 100%;
+       border:#a9a8a8;
+       border-style:ridge;
+        background-color:#60b9bc;
+        text-decoration:none;
+        
+}
+a:-webkit-any-link:hover {
+        background-color:#cecece;
+}
+/* Centers title of each post and makes width = browswer window*/
+.title {
+        text-align:center;
+        width:100%;
+        font-size:20pt;
+        font-family:impact;
+       
+}
+
+.happiness-level-col {
+       width: 10%;
+       float:left; 
+       text-align:center; 
+}
+.story-col {
+        width: 75%;
+        display:inline-block;
+        padding-bottom:5px;
+}
+.like-col {
+        width:10%; 
+        float:right;
+        text-align:center;
+        padding-right:15px;
+}
+
+
+.timestamp {
+        clear:left;
+        margin-left: 50px;
+       
+}
+.post-color {
+        background-color:#00b7be;
+        border-radius:10px;
+        margin-bottom:10px;
+}
+.like {
+        border:none;
+        background:none;
+        background-image:url('../images/heart.png');
+        color:transparent; 
+        width: 47px;
+        height:40px;
+        
+}
+.happiness-level-1 {
+        border:none;
+        background:none;
+        background-image:url('../images/happiness-level.png');
+        color:transparent;
+        height:80px;
+        width:40px;
+}
+.happiness-level-2 {
+         border:none;
+        background:none;
+        background-image:url('../images/happiness-level.png');
+        color:transparent;
+        height:80px;
+        width:40px;
+        background-position-x: -40px;
+}
+.happiness-level-3 {
+         border:none;
+        background:none;
+        background-image:url('../images/happiness-level.png');
+        color:transparent;
+        height:80px;
+        width:40px;
+        background-position-x: -80px;
+}
+
+.smile {
+        page-break-inside : avoid;
+        break-inside:avoid-column;
+}      
+/* FINISH ME (Task 3): add responsive styling for the number of layout columns */
+@media screen and (min-width: 1200px) {
+        .smiles{
+         column-count: 3;
+         column-gap:15px;
+        }
+      
+       
+       
+       
+}
+@media screen and (max-width:1200px) and (min-width:800px) {
+        .smiles{
+column-count: 2;
+         column-gap:12px;
+        }
+        .smile {
+                display:inline-block;
+        }
+}
+@media screen and (max-width: 800px) {
+        .smile {column-count:1;}
+}
